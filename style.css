@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+ /* importado direto do google fonts */
+
+body {
+  background: #A9A9A9; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.container { /* Selecionado com . pois é classe */
+  background: #F8F8FF; /* Cor do fundo do elemento */
+  color: #1C1C1C; /* Cor da fonte de tudo o que tiver dentro do elemento*/
+  margin: 25px; /* espaço do elemento de dentro para o de fora */
+  border-radius:  4px; /* diâmetro da borda - arredondar */
+  box-shadow: 6px 6px 6px #0E1D2F; /* sombra do elemento */
+  padding:  60px; /* espaço do elemento de fora para o dentro */
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex; /* declaração para flexbox */
+}
+
+.perfil-foto {
+  border-radius: 4px;
+  max-height: 140px; /* tamanho máximo do item */
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); /* sombra do elemento */
+  margin-top: 30px;
+}
+
+.titulo {
+  margin-left: 30px; /* Define a marge do lado esquerdo do elemento */
+}
+
+.titulo-h1 {
+  
+}
+
+.titulo-h3 {
+  
+}
+
+.titulo-h5 { 
+  line-height: 50%; /* Espaçamento entre linhas */
+  word-spacing: 10px; /* Espaçamento entre elementos/palavras na mesma linha */
+}
+
+.img-icone {
+  max-height: 30px; /* Tamanho máximo da imagem */
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 16px;
+  background: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+
+.projetos {
+  display: flex; /* Definição para flexBox */
+  flex-direction: column; /* Definição para layout coluna */
+  background: #008CBA; /* linear-gradient(to left, #003399 10%, #003366 90%); /* cor gradient */
+  border-radius: 6px;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.ul-projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  list-style: none;
+  margin: 50px;
+  margin-left: 1px;
+}
+
+.titulo-projetos {
+  font-weight: 500;
+  font-size: 36px;
+  margin-top: -20px;
+}
+
+.item-projetos {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 46px; /*altura entre uma linha e outra*/
+}
+
+.item-projetos a {
+  color: #1C1C1C;
+  text-decoration: none; /* Tira a linha de link das tags <a> -- definir a tag "a" após selecionar a classe, é indicar que tudo o que estiver dentro do item-projetos, que seja a tag <a>, receberá esses parâmetros */
+}
+
+.dark { /*classe criada no js para alterar o tema*/
+  background: #1D1E1E;
+}
+
+.dark .container {
+  background: #003366;
+  color: white;
+}
+
+.dark .projetos {
+  background: #181818;
+  color: white;
+}
+
+.dark .botao {
+  background: #181818;
+  color: white;
+  border: 1px solid white;
+}
